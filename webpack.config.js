@@ -10,7 +10,7 @@ export default {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './dist'),
-        publicPath: ''
+        publicPath: 'dist/'
     },
     mode: 'none',
     module: {
@@ -19,9 +19,18 @@ export default {
             //     test:/\.(ttf)$/,
             //     type:'asset/resource'
             // },
+            // {
+            //     test:/\.(png|jpg)$/,
+            //     type:'asset/resource'
+            // }
             {
                 test:/\.(png|jpg)$/,
-                type:'asset/resource'
+                type:'asset',
+                parser:{
+                    dataUrlCondition: {
+                        maxSize: 3*1024 // 3 kilobytes
+                    }
+                }
             }
         ]
     }

@@ -102,7 +102,7 @@ module.exports = __webpack_require__.p + "18636df22cfaed3d2d37.jpg";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
+/******/ 		__webpack_require__.p = "dist/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
