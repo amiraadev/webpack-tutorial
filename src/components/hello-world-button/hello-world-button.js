@@ -1,3 +1,4 @@
+import './hello-world-button.css'
 class helloWorldButton {
     render(){
         const button = document.createElement('button');
