@@ -7,3 +7,4 @@ function addImage(params) {
     const body = document.createElement('body');
     body.appendChild(img);
 }
+export default addImage;
