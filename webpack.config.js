@@ -31,6 +31,10 @@ export default {
                         maxSize: 3*1024 // 3 kilobytes
                     }
                 }
+            },
+            {
+                test:/\.txt$/,
+                type:'asset/source',
             }
         ]
     }
