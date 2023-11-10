@@ -1,7 +1,10 @@
 import helloWorldButton from './components/hello-world-button/hello-world-button.js';
 
-const helloWorldButton = new helloWorldButton();
-helloWorldButton.render();
+const helloButton = new helloWorldButton();
+helloButton.render();
+
+
+
 
 
 
