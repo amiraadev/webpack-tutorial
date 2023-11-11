@@ -41,7 +41,18 @@ export default {
                 use:[
                     'style-loader','css-loader'
                 ],
-            }
+            },
+            {
+                test: /\.js$/, // Apply Babel only to JavaScript files
+                exclude: /node_modules/,
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/env'],
+                    plugins: ['@babel/plugin-proposal-class-properties'],
+                  },
+                },
+              },
         ]
     }
 };
