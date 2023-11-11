@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path'; // Add this line
-
+import TerserPlugin from 'terser-webpack-plugin';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -15,14 +15,14 @@ export default {
     mode: 'none',
     module: {
         rules:[
-            // {
-            //     test:/\.(ttf)$/,
-            //     type:'asset/resource'
-            // },
-            // {
-            //     test:/\.(png|jpg)$/,
-            //     type:'asset/resource'
-            // }
+            {
+                test:/\.(ttf)$/,
+                type:'asset/resource'
+            },
+            {
+                test:/\.(png|jpg)$/,
+                type:'asset/resource'
+            },
             {
                 test:/\.(png|jpg)$/,
                 type:'asset',
@@ -54,5 +54,8 @@ export default {
                 },
               },
         ]
-    }
+    },
+    plugins:[
+        new TerserPlugin()
+    ]
 };
