@@ -44,6 +44,14 @@ export default {
                 ],
             },
             {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+            {
                 test: /\.js$/, // Apply Babel only to JavaScript files
                 exclude: /node_modules/,
                 use: {
