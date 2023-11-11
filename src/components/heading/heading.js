@@ -1,3 +1,4 @@
+import "./heading.scss";
 class Heading {
     render() {
         const h1 = document.createElement('h1');
