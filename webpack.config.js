@@ -19,7 +19,8 @@ export default {
         // publicPath: 'dist/' 
       
     },
-    mode: 'none',
+    // mode: 'none',
+    mode: 'production',
     module: {
         rules:[
             {
