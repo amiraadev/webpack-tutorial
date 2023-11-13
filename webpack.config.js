@@ -77,6 +77,12 @@ export default {
                 path.join(process.cwd(), 'build/**/*'),
             ]
         }),
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Customizing html-webpack-plugin',
+            filename: 'subfolder/custom-filename.html',
+            meta:{
+                description:'Some description'
+            }
+        }),
     ]
 };
