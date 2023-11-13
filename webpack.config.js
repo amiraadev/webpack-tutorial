@@ -5,6 +5,8 @@ import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import {CleanWebpackPlugin} from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -66,6 +68,12 @@ export default {
                   },
                 },
               },
+              {
+                test:/\.hbs$/,
+                use:[
+                    'handlebars-loader'
+                ],
+            },
         ]
     },
     plugins:[
@@ -78,10 +86,10 @@ export default {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: 'Customizing html-webpack-plugin',
+            title: 'Customizing html-webpack-plugin 1',
             filename: 'subfolder/custom-filename.html',
             meta:{
-                description:'Some description'
+                description:'Some description 1'
             }
         }),
     ]

@@ -2,8 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Customizing html-webpack-plugin</title>
-  <meta name="description" content="Some description"><meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="bundle.ac6b0e3359df3975523b.js"></script><link href="styles.css" rel="stylesheet"></head>
+    <title>{{htmlWebpackPlugin.options.title}}</title>
+    <meta name="description" content={{htmlWebpackPlugin.options.description}}>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{!-- <script defer src="bundle.ac6b0e3359df3975523b.js"></script> // in the the build process we don't need to have these
+    <link href="styles.css" rel="stylesheet"> --}}
+ </head>
   <body>
   </body>
 </html>
