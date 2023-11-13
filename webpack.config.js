@@ -4,6 +4,7 @@ import path from 'path'; // Add this line
 import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import {CleanWebpackPlugin} from 'clean-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -74,5 +75,6 @@ export default {
                 path.join(process.cwd(), 'build/**/*'),
             ]
         }),
+        new HtmlWebpackPlugin(),
     ]
 };
