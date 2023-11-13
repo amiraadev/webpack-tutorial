@@ -20,7 +20,7 @@ export default {
       
     },
     // mode: 'none',
-    mode: 'production',
+    mode: 'development',
     module: {
         rules:[
             {
