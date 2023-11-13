@@ -68,12 +68,12 @@ export default {
                   },
                 },
               },
-              {
-                test:/\.hbs$/,
-                use:[
-                    'handlebars-loader'
-                ],
-            },
+            //   {
+            //     test:/\.hbs$/,
+            //     use:[
+            //         'handlebars-loader'
+            //     ],
+            // },
         ]
     },
     plugins:[
@@ -86,11 +86,11 @@ export default {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: 'Customizing html-webpack-plugin 1',
-            filename: 'subfolder/custom-filename.html',
-            meta:{
-                description:'Some description 1'
-            }
+            // title: 'test',
+            // filename: 'subfolder/custom-filename.html',
+            // meta:{
+            //     description:'test description 1'
+            // }
         }),
     ]
 };
