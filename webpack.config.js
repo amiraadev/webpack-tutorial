@@ -68,6 +68,6 @@ export default {
     plugins:[
         new TerserPlugin(),
         new MiniCssExtractPlugin({filename:'styles.css'}),
-        new CleanWebpackPlugin({filename:'styles.css'}),
+        new CleanWebpackPlugin(),
     ]
 };
