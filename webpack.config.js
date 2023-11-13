@@ -3,6 +3,7 @@ import { dirname } from 'path';
 import path from 'path'; // Add this line
 import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import {CleanWebpackPlugin} from 'clean-webpack-plugin';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -67,5 +68,6 @@ export default {
     plugins:[
         new TerserPlugin(),
         new MiniCssExtractPlugin({filename:'styles.css'}),
+        new CleanWebpackPlugin({filename:'styles.css'}),
     ]
 };
