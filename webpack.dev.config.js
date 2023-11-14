@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path'; // Add this line
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
 import {CleanWebpackPlugin} from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 

@@ -79,7 +79,7 @@ export default {
     },
     plugins:[
         new TerserPlugin(),
-        new MiniCssExtractPlugin({filename:'styles.[contenthash].css'}),
+        new MiniCssExtractPlugin({filename:'styles.css'}),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns:[
                 '**/*',
