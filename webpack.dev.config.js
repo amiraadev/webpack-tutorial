@@ -1,7 +1,6 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path'; // Add this line
-import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import {CleanWebpackPlugin} from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
@@ -47,13 +46,13 @@ export default {
             {
                 test:/\.css$/,
                 use:[
-                    MiniCssExtractPlugin.loader,'css-loader'
+                    'style-loader','css-loader'
                 ],
             },
             {
                 test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    'style-loader',
                     'css-loader',
                     'sass-loader',
                 ],
@@ -78,8 +77,6 @@ export default {
         ]
     },
     plugins:[
-        new TerserPlugin(),
-        new MiniCssExtractPlugin({filename:'styles.css'}),
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns:[
                 '**/*',
