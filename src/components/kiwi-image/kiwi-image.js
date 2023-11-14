@@ -1,4 +1,5 @@
 import kiwi from './kiwi.jpg';
+import './kiwi-image.js';
 
 class KiwiImage {
     render(){
