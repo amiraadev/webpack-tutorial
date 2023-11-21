@@ -90,10 +90,22 @@ export default {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: 'test',
-            filename: 'subfolder/custom-filename.html',
+            filename: 'index.html',
+            chunks: ['test.html'],
+            title: 'index',
+            template: 'src/index.hbs',
             meta:{
                 description:'test description 1'
+            },
+            minify: false
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'kiwi.html',
+            chunks: ['kiwi'],
+            title: 'kiwi',
+            template: 'src/index.hbs',
+            meta:{
+                description:'test description 2'
             },
             minify: false
         }),
