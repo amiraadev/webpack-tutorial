@@ -5,7 +5,7 @@ const helloButton = new helloWorldButton();
 const Header = new Heading();
 
 // Header.render();
-Header.render( _.upperFirst('testing something'));
+Header.render( _.upperFirst('index '));
 helloButton.render();
 
 if(process.env.NODE_ENV === 'production'){

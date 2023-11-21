@@ -4,7 +4,7 @@ import _ from "lodash";
 
 const heading = new Heading();
 // heading.render();
-heading.render( _.upperFirst('testing something'));
+heading.render( _.upperFirst('kiwi '));
 
 
 const kiwiImage = new KiwiImage();
