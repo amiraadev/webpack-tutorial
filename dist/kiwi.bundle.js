@@ -20,6 +20,39 @@ eval("\n\nmodule.exports = ansiHTML\n\n// Reference to https://github.com/sindre
 
 /***/ }),
 
+/***/ "./src/components/heading/heading.js":
+/*!*******************************************!*\
+  !*** ./src/components/heading/heading.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./heading.scss */ \"./src/components/heading/heading.scss\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\nfunction _toPropertyKey(arg) { var key = _toPrimitive(arg, \"string\"); return _typeof(key) === \"symbol\" ? key : String(key); }\nfunction _toPrimitive(input, hint) { if (_typeof(input) !== \"object\" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || \"default\"); if (_typeof(res) !== \"object\") return res; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (hint === \"string\" ? String : Number)(input); }\n\nvar Heading = /*#__PURE__*/function () {\n  function Heading() {\n    _classCallCheck(this, Heading);\n  }\n  _createClass(Heading, [{\n    key: \"render\",\n    value: function render(custom_title) {\n      var h1 = document.createElement('h1');\n      var body = document.querySelector('body');\n      h1.innerHTML = \"webpack is awesome \" + custom_title;\n      body.appendChild(h1);\n    }\n  }]);\n  return Heading;\n}();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading);\n\n//# sourceURL=webpack://webpack-tutorial/./src/components/heading/heading.js?");
+
+/***/ }),
+
+/***/ "./src/components/kiwi-image/kiwi-image.js":
+/*!*************************************************!*\
+  !*** ./src/components/kiwi-image/kiwi-image.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kiwi.jpg */ \"./src/components/kiwi-image/kiwi.jpg\");\n/* harmony import */ var _kiwi_image_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kiwi-image.scss */ \"./src/components/kiwi-image/kiwi-image.scss\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\nfunction _toPropertyKey(arg) { var key = _toPrimitive(arg, \"string\"); return _typeof(key) === \"symbol\" ? key : String(key); }\nfunction _toPrimitive(input, hint) { if (_typeof(input) !== \"object\" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || \"default\"); if (_typeof(res) !== \"object\") return res; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (hint === \"string\" ? String : Number)(input); }\n\n\nvar KiwiImage = /*#__PURE__*/function () {\n  function KiwiImage() {\n    _classCallCheck(this, KiwiImage);\n  }\n  _createClass(KiwiImage, [{\n    key: \"render\",\n    value: function render() {\n      var img = document.createElement('img');\n      img.src = _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__;\n      img.alt = \"kiwi\";\n      img.classList.add(\"kiwi-img\");\n      var bodyDomElement = document.querySelector(\"body\");\n      bodyDomElement.appendChild(img);\n    }\n  }]);\n  return KiwiImage;\n}();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KiwiImage);\n\n//# sourceURL=webpack://webpack-tutorial/./src/components/kiwi-image/kiwi-image.js?");
+
+/***/ }),
+
+/***/ "./src/kiwi.js":
+/*!*********************!*\
+  !*** ./src/kiwi.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_heading_heading_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/heading/heading.js */ \"./src/components/heading/heading.js\");\n/* harmony import */ var _components_kiwi_image_kiwi_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/kiwi-image/kiwi-image.js */ \"./src/components/kiwi-image/kiwi-image.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nvar heading = new _components_heading_heading_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n// heading.render();\nheading.render('kiwi ');\nvar kiwiImage = new _components_kiwi_image_kiwi_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nkiwiImage.render();\n\n//# sourceURL=webpack://webpack-tutorial/./src/kiwi.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/heading/heading.scss":
 /*!**************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/heading/heading.scss ***!
@@ -453,39 +486,6 @@ eval("/** @typedef {\"info\" | \"warning\" | \"error\"} LogLevel */\n\n/** @type
 "use strict";
 eval("module.exports = __webpack_require__.p + \"18636df22cfaed3d2d37.jpg\";\n\n//# sourceURL=webpack://webpack-tutorial/./src/components/kiwi-image/kiwi.jpg?");
 
-/***/ }),
-
-/***/ "./src/components/heading/heading.js":
-/*!*******************************************!*\
-  !*** ./src/components/heading/heading.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _heading_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./heading.scss */ \"./src/components/heading/heading.scss\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\nfunction _toPropertyKey(arg) { var key = _toPrimitive(arg, \"string\"); return _typeof(key) === \"symbol\" ? key : String(key); }\nfunction _toPrimitive(input, hint) { if (_typeof(input) !== \"object\" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || \"default\"); if (_typeof(res) !== \"object\") return res; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (hint === \"string\" ? String : Number)(input); }\n\nvar Heading = /*#__PURE__*/function () {\n  function Heading() {\n    _classCallCheck(this, Heading);\n  }\n  _createClass(Heading, [{\n    key: \"render\",\n    value: function render(custom_title) {\n      var h1 = document.createElement('h1');\n      var body = document.querySelector('body');\n      h1.innerHTML = \"webpack is awesome \" + custom_title;\n      body.appendChild(h1);\n    }\n  }]);\n  return Heading;\n}();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heading);\n\n//# sourceURL=webpack://webpack-tutorial/./src/components/heading/heading.js?");
-
-/***/ }),
-
-/***/ "./src/components/kiwi-image/kiwi-image.js":
-/*!*************************************************!*\
-  !*** ./src/components/kiwi-image/kiwi-image.js ***!
-  \*************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kiwi.jpg */ \"./src/components/kiwi-image/kiwi.jpg\");\n/* harmony import */ var _kiwi_image_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kiwi-image.scss */ \"./src/components/kiwi-image/kiwi-image.scss\");\nfunction _typeof(o) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o; }, _typeof(o); }\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, \"prototype\", { writable: false }); return Constructor; }\nfunction _toPropertyKey(arg) { var key = _toPrimitive(arg, \"string\"); return _typeof(key) === \"symbol\" ? key : String(key); }\nfunction _toPrimitive(input, hint) { if (_typeof(input) !== \"object\" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || \"default\"); if (_typeof(res) !== \"object\") return res; throw new TypeError(\"@@toPrimitive must return a primitive value.\"); } return (hint === \"string\" ? String : Number)(input); }\n\n\nvar KiwiImage = /*#__PURE__*/function () {\n  function KiwiImage() {\n    _classCallCheck(this, KiwiImage);\n  }\n  _createClass(KiwiImage, [{\n    key: \"render\",\n    value: function render() {\n      var img = document.createElement('img');\n      img.src = _kiwi_jpg__WEBPACK_IMPORTED_MODULE_0__;\n      img.alt = \"kiwi\";\n      img.classList.add(\"kiwi-img\");\n      var bodyDomElement = document.querySelector(\"body\");\n      bodyDomElement.appendChild(img);\n    }\n  }]);\n  return KiwiImage;\n}();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (KiwiImage);\n\n//# sourceURL=webpack://webpack-tutorial/./src/components/kiwi-image/kiwi-image.js?");
-
-/***/ }),
-
-/***/ "./src/kiwi.js":
-/*!*********************!*\
-  !*** ./src/kiwi.js ***!
-  \*********************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_heading_heading_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/heading/heading.js */ \"./src/components/heading/heading.js\");\n/* harmony import */ var _components_kiwi_image_kiwi_image_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/kiwi-image/kiwi-image.js */ \"./src/components/kiwi-image/kiwi-image.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\n\nvar heading = new _components_heading_heading_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n// heading.render();\nheading.render('kiwi ');\nvar kiwiImage = new _components_kiwi_image_kiwi_image_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nkiwiImage.render();\n\n//# sourceURL=webpack://webpack-tutorial/./src/kiwi.js?");
-
 /***/ })
 
 /******/ 	});
@@ -576,7 +576,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ac8f8d772dd83c549d1a")
+/******/ 		__webpack_require__.h = () => ("6d5286f397c023d1b051")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -1046,7 +1046,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _com
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "";
+/******/ 		__webpack_require__.p = "/static/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
