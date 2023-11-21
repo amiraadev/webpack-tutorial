@@ -26,7 +26,8 @@ export default {
     mode: 'production',
     optimization:{
       splitChunks:{
-        chunks:'all'
+        chunks:'all',
+        minSize: 1000
       }
     },
     module: {
