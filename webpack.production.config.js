@@ -90,11 +90,12 @@ export default {
             ]
         }),
         new HtmlWebpackPlugin({
-            // title: 'test',
-            // filename: 'subfolder/custom-filename.html',
-            // meta:{
-            //     description:'test description 1'
-            // }
+            title: 'test',
+            filename: 'subfolder/custom-filename.html',
+            meta:{
+                description:'test description 1'
+            },
+            minify: false
         }),
     ]
 };
