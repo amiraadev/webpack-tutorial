@@ -24,6 +24,11 @@ export default {
     },
     // mode: 'none',
     mode: 'production',
+    optimization:{
+      splitChunks:{
+        chunks:'all'
+      }
+    },
     module: {
         rules:[
             {
